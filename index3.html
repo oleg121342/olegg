@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="text1">Программирование на JavaScript</p>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <script>
+    var divs = document.getElementsByClassName('box')
+  console.log(divs);
+  for (var i = 0; i < divs.length; i++) {
+    divs[i].style.height = '100px';
+     divs[i].style.width = '100px';
+    divs[i].style.backgroundColor ='red'
+    console.log(divs[i]);
+  }
+
+  for (var i = 1; i <divs.length; i+=2) {
+     divs[i].style.backgroundColor = 'dodgerblue'
+  }
+  // var paragraph = document.getElementById('text1');
+   //console.log(paragrah);
+ //  paragraph.style.color = 'dodgerblue';
+  </script>
+</body>
+</html>

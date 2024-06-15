@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>восьмое занятие</title>
+  <style>
+    body {
+      height: 1000px;
+      background-color: chartreuse;
+      margin: 0;
+      font-size: 'Franklin Gothic Medium', 'April Narrow', 'Aprial, sans' ;
+    }
+    #box {
+      width: 50%;
+      height: 100%;
+      margin: auto;
+      background-color: brown;
+      padding: 30px;
+    }
+    #h1 {
+      margin-top: 0;
+    }
+    img {
+      width: 100%;
+      display: block;
+    }
+    .blur {
+      filter: blur(5px);
+    }
+  </style>
+</head>
+   <body>
+    <div id="box">
+          <h1 id="h1">апельсин</h1>
+          <img src="old.jpg" data src ="nem.ipg" alt="" class="blur">
+          <p id="text1">плодовое дерево; вид рода Цитрус семейства Рутовые, а также плод этого дерева.
+          </p>
+
+          <p id="text2">Апельсин — самая распространённая цитрусовая культура во всех тропических и субтропических областях мира
+          </p>
+    </div>
+    <script >
+      document.addEventListener('DOMcontententLoaded', function () {
+    // var box = document.getElementById('box');
+    lazyImage.forEach(function(lazy) {
+      console++;
+      console.log
+    })
+     var couter = 0;
+     lazyImages =[].slice.csll(document.dueryselectorAll('.blur'));
+     console.log(lazyImage,lazyImages instanceof Array);
+
+     function lazyLoad() {
+    //  var lazy = document.querySelector('.blur');
+    lazyImage.forEach(function (lazy) {
+      
+    })
+      counter++;
+      console.log(lazy.getboundindingclientRect());
+      console.log('высота вьюпорта:' + Window.innerHeight);
+     if (lazy.getboundindingclientRect().top <= Window.innerHeight){
+      
+     }
+      console.log(counter);
+      if(lazy.hasAttribute('data-src')){
+      console.log('woooooooow');
+      var data =lazy.getAttribute('data-src')
+      lazy.setAttribute('src',data)
+      lazy.removeAttribute('data-src');
+      lazy.classList.remove('blur');
+      }
+      document.removeEventListener('scroll', lazyLoad)
+     }
+     document.addEventListener('scroll', lazyLoad,false)
+    // function() {
+     //   ++counter;
+      //  console.log('Прокруточка' + counter);
+    //  }, false)
+      })
+      var obj = {},
+      numder = 10,
+      string = 'я стройка'
+      function logThis() {
+        console.log(this);
+      }
+      logThis();
+      logThis.call(obj);
+      logThis.call(numder);
+      logThis.call(string);
+    </script> 
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="box1">
+    <p id="text1">я первый</p>
+    <p id="text1">я второй</p>
+    <p id="text1">я третий</p>
+    <p id="text1">я четвертый</p>
+  </div>
+  <script>
+    // var removing = document.getElementBeId('text1');
+    // var removed = document.body.removeChild(removing);
+    // console.log(removed)
+  /* var p =document.createElement('p'),
+   beforeP = document.getElementById('text1');
+   p.appent('я добаляю текст с помошью метода append');
+   p.id = 'defore'
+   p.style.color = 'red'
+ // beforeP.after(p);
+ var box1 = document.getElementById('box1')
+ beforeP.replaceWith(p);*/
+ // var pCollection = []
+ // box1 =document.getElementById('box1')
+  /* for( var i = 0; i < 5; i++) {
+    pcollection.push(document.createEement('p'));
+    pCollection[i].id = 'p' + i;
+  }
+  console.log(pCollection);
+  box1.prepend(...pCollection);
+  */
+
+var box1 = document.getElementById('box1');
+box1.innerHTML = 'я стер все програмы'
+var link = document.createElement('a');
+link.textContent = 'нажми на меня';
+link.setAttribute('href','https://youtu.be/CwdF7LrZ190?si=NefJcsQKJI_rjI3B')
+link.style.cssText = 'fond-size:30px'
+  document.body.prepend(link)
+  </script>
+</body>
+</html>

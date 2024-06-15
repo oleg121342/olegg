@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<input type="text" id="text" />
+
+<script>
+  var text =document.getElementById('text');
+
+  var changeText = function() {
+   console.log(this.value);
+
+  }
+  var focusin = function () {
+    console.log('Тыкнули на минуту и моджно вводить текст') 
+  }
+  focusout= function () {
+    console.log('тыкнули вне инпута текст уже не виден')
+  }
+  text.addEventListener('focus',focusin, false);
+  text.addEventListener('blur', focusout, false)
+</script>
+</body>
+</html>
